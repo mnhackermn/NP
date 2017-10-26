@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog 286</title>
+    <link rel="stylesheet" href="http://www.connorloughlin.com/main.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style id="jsbin-css">
+        
+      </style>
+</head>
+<body>
+    
+
+
+       
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+      
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">List <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Online shop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Contents 1</a>
+                      <a class="dropdown-item" href="#">Contents 1 </a>
+                      <a class="dropdown-item" href="#">Contents 1</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Instagram</a>
+                    
+                  </li>
+               
+               
+                </ul>
+          
+          </div>
+          <a class="navbar-brand" href="#">Blog 286</a>
+        </div>
+        </nav>
+         <header>
+           
+            <div class="caption">
+        </header>
+
+
+        <script id="jsbin-javascript">
+var backgrounds = [
+  {  image: 'https://static.pexels.com/photos/622041/pexels-photo-622041.jpeg',
+   subtitle: 'Looking out at Carcassonne, France - August 2013'
+  },
+  {  image: 'http://upload.wikimedia.org/wikipedia/commons/1/13/1632x1224_sertaoe_2_rio_grande_do_norte_landscape_panorama_brasil.jpg',
+   subtitle: 'Version 2'
+  },
+  {  image: 'http://upload.wikimedia.org/wikipedia/commons/7/71/1632x1224_sertaoe_rio_grande_do_norte_landscape_panorama_brasil.jpg',
+   subtitle: 'Version 3'
+  }
+       ]; 
+
+/**
+ * Returns a random integer between min and max
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+       $(document).ready(function(){
+         var bgNumber = getRandomInt(0, backgrounds.length-1);
+         
+         $('body').css('background-image', 'url('+backgrounds[bgNumber].image+')');
+         $('h4').html(backgrounds[bgNumber].subtitle);
+       });
+</script>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
